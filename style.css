@@ -86,6 +86,23 @@ img {
   }
   nav a {
     width: 100%;
+    .content {
+      max-width: 1100;
+      margin: 30px auto;
+      padding: 30px;
+      background: white;
+      color: #222;
+      border-radius: 14px;
+    }
+    .content h2,
+    .content h3,
+    .content p,
+    .content li,
+    .content label {
+      color: #222;
+    }
+      
+      
   }
 }
   
