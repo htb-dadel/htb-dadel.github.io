@@ -104,12 +104,21 @@ img {
     .content label {
       color: #222;
     }
-     .content img {
-       max-width: 188px;
-       display: block;
-       margin-left: auto;
-       margin-bottom: 20px;
-     }
+    .content img {
+      max-width: 188px;
+      display: block;
+      margin-left: auto;
+      margin-bottom: 20px;
+    }
+    .box {
+      min-height: 0;
+    }
+    .box h1 {
+      margin-bottom: 18px;
+    }
+    .box nav {
+      margin-top: 0;
+    }
       
   }
 }
