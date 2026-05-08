@@ -1,36 +1,353 @@
+HOMEPAGE CODE ZUM COPY-PASTE
+
+
+==================== style.css ====================
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.box {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px 30px;
+  background: #111;
+  color: white;
+  border-radius: 14px;
+}
+
+.box h1 {
+  margin: 0 0 18px 0;
+  color: white;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 0;
+}
+
+nav a {
+  background: #222;
+  color: #4da6ff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #333;
+  text-decoration: underline;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  color: #222;
+  border-radius: 14px;
+}
+
+.content h2,
+.content h3,
+.content p,
+.content li,
+.content label {
+  color: #222;
+}
+
+.content a {
+  color: #1b75bb;
+}
+
+.content img {
+  max-width: 180px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
+  height: auto;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 520px;
+  padding: 10px;
+  margin: 6px 0 14px 0;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 10px;
+  }
+
+  .box,
+  .content {
+    padding: 20px;
+    margin: 18px auto;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  p,
+  li {
+    font-size: 16px;
+  }
+
+  nav {
+    gap: 6px;
+  }
+
+  nav a {
+    padding: 9px 11px;
+  }
+
+  .content img {
+    margin-left: 0;
+  }
+}
+
+
+==================== index.html ====================
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
-  <title>Angebot</title>
- <link rel="stylesheet" href="style.css">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADHS Impulsiv</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="box"> 
-<h1>Angebot</h1>
 
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="ueber-mich.html">Über mich</a> |
-  <a href="links.html">Wichtige Links</a> |
-  <a href="kontakt.html">Kontakt</a> |
-  <a href="angebot.html">Angebot</a> 
-</nav>
-</div>
-<div class="content">
-  
-<p>Mein Angebot im Übreblick:</p>
- <ul>
-   <li>
-   <a href="begleitung.html">Begleitung / Coaching</a>
-   </li>
-   <li>
-   <a href="siebdruck.html">Siebdruck / Kunst</a>
-   </li>
-  </ul>
- <p>Kosten Punkt</p>
- <p>Bilder</p>
-</div>
+  <div class="box">
+    <h1>Willkommen auf ADHS Impulsiv</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="links.html">Wichtige Links</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="angebot.html">Angebot</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <div style="text-align: right;">
+      <img src="ComicHand_Clean.png" alt="Bild">
+    </div>
+
+    <p>
+      Diese Seite ist mein persönlicher Ort für ADHS, Struktur, Fokus,
+      Lernen und Technik im Alltag.
+    </p>
+
+  </div>
+
+</body>
+</html>
+
+
+==================== angebot.html ====================
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angebot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <h1>Angebot</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="links.html">Wichtige Links</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="angebot.html">Angebot</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <p>Mein Angebot im Überblick:</p>
+
+    <ul>
+      <li><a href="begleitung.html">Begleitung / Coaching</a></li>
+      <li><a href="siebdruck.html">Siebdruck / Kunst</a></li>
+    </ul>
+
+    <p>Kosten Punkt</p>
+    <p>Bilder</p>
+
+  </div>
+
+</body>
+</html>
+
+
+==================== ueber-mich.html ====================
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Über mich</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <h1>Über mich</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="links.html">Wichtige Links</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="angebot.html">Angebot</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <p>Wer ich bin. Was ich mache.</p>
+    <p>...und noch vieles mehr.</p>
+
+  </div>
+
+</body>
+</html>
+
+
+==================== links.html ====================
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wichtige Links</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <h1>Wichtige Links</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="links.html">Wichtige Links</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="angebot.html">Angebot</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <ul>
+      <li><a href="https://www.delmonte-aarberg.ch">DelMonte-Aarberg.ch</a></li>
+      <li><a href="https://www.slacker.ch">Slacker.ch</a></li>
+      <li><a href="https://www.musigfürdi.ch">Musigfürdi.ch</a></li>
+      <li><a href="https://www.stephaniewenger.ch">StephanieWenger.ch</a></li>
+      <li><a href="#">Jonglier Anleitungen Muster</a></li>
+      <li><a href="https://www.rabe.ch">Radio RaBe Bern</a></li>
+    </ul>
+
+    <p>Hier kommt noch was...</p>
+    <p>...aber unklar wann und wie!</p>
+
+  </div>
+
+</body>
+</html>
+
+
+==================== kontakt.html ====================
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakt</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <h1>Kontakt</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="links.html">Wichtige Links</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="angebot.html">Angebot</a>
+    </nav>
+  </div>
+
+  <div class="content">
+    <h2>Kontaktformular</h2>
+
+    <form action="https://formspree.io/f/DEIN-FORMSPREE-CODE" method="POST">
+      <label>Vorname:</label><br>
+      <input type="text" name="vorname" required><br>
+
+      <label>Nachname:</label><br>
+      <input type="text" name="nachname" required><br>
+
+      <label>Ort / Adresse:</label><br>
+      <input type="text" name="adresse"><br>
+
+      <label>E-Mail:</label><br>
+      <input type="email" name="email" required><br>
+
+      <label>Telefon:</label><br>
+      <input type="tel" name="telefon"><br>
+
+      <label>Nachricht:</label><br>
+      <textarea name="nachricht" required></textarea><br>
+
+      <button type="submit">Nachricht senden</button>
+    </form>
+
+  </div>
+
 </body>
 </html>
