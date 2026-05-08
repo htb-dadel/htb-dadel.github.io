@@ -1,6 +1,7 @@
 * {
-  box-sizing: boarder-box;
+  box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 20px;
@@ -8,119 +9,133 @@ body {
   background: #f4f4f4;
   color: #222;
 }
+
 .box {
   max-width: 1100px;
   margin: 0 auto;
-  padding: 22px 30px;
+  padding: 24px 30px;
   background: #111;
   color: white;
   border-radius: 14px;
 }
-h1, h2 {
-  margin-top: 0;
+
+.box h1 {
+  margin: 0 0 18px 0;
   color: white;
 }
-p {
-  font-size: 18px;
-  line-height: 1.6a;
-}
-a {
-  color: #4da6ff;
-  text-decoration: none;
-}
+
 nav {
-  margin-top: 25px;
   display: flex;
   flex-wrap: wrap;
-  gap: 12 px;
+  gap: 8px;
+  margin-top: 0;
 }
+
 nav a {
   background: #222;
+  color: #4da6ff;
   padding: 10px 14px;
   border-radius: 8px;
+  text-decoration: none;
 }
-/* korrektur farbe */
-body {
-  background: #f4f4f4;
-  color: #222;
-}
-.box h1,
-.box h2,
--box h3, {
-  color: white;
-}
-.box {
-  background: #111;
-  color: white;
-}
-.box p {
-  color: white;
-}
-nav a {
-  background: #222;
-  color; #4da6ff;
-}
+
 nav a:hover {
   background: #333;
-    }
-img {
-  max-width: 100%;
+  text-decoration: underline;
+}
+
+.content {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 30px;
+  background: white;
+  color: #222;
+  border-radius: 14px;
+}
+
+.content h2,
+.content h3,
+.content p,
+.content li,
+.content label {
+  color: #222;
+}
+
+.content a {
+  color: #1b75bb;
+}
+
+.content img {
+  max-width: 180px;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
   height: auto;
 }
-/* HANDY */
+
+input,
+textarea,
+button {
+  font: inherit;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 520px;
+  padding: 10px;
+  margin: 6px 0 14px 0;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+button {
+  padding: 10px 16px;
+  border: 0;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #333;
+}
+
 @media (max-width: 700px) {
   body {
     padding: 10px;
   }
-  .box {
+
+  .box,
+  .content {
     padding: 20px;
+    margin: 18px auto;
   }
+
   h1 {
     font-size: 28px;
   }
-  p {
+
+  p,
+  li {
     font-size: 16px;
   }
+
   nav {
-    flex-direction: column;
+    gap: 6px;
   }
+
   nav a {
-    width: 100%;
-    .content {
-      max-width: 1100px;
-      margin: 30px auto;
-      padding: 30px;
-      background: white;
-      color: #222;
-      border-radius: 14px;
-    }
-    .content {
-      color: #222;
-    }
-      
-    .content h2,
-    .content h3,
-    .content p,
-    .content li,
-    .content label {
-      color: #222;
-    }
-    .content img {
-      max-width: 188px;
-      display: block;
-      margin-left: auto;
-      margin-bottom: 20px;
-    }
-    .box {
-      min-height: 0;
-    }
-    .box h1 {
-      margin-bottom: 18px;
-    }
-    .box nav {
-      margin-top: 0;
-    }
-      
+    padding: 9px 11px;
+  }
+
+  .content img {
+    margin-left: 0;
   }
 }
-  
+
