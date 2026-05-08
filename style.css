@@ -1,5 +1,5 @@
 * {
-  box-siting: board-box;
+  box-sizing: board-box;
 }
 body {
   margin: 0;
@@ -21,7 +21,7 @@ h1, h2 {
   color: white;
 }
 p {
-  front-size: 18px;
+  font-size: 18px;
   line-height: 1.6a;
 }
 a {
@@ -76,10 +76,10 @@ img {
     padding: 20px;
   }
   h1 {
-    front-size: 28px;
+    font-size: 28px;
   }
   p {
-    front-size: 16px;
+    font-size: 16px;
   }
   nav {
     flex-direction: column;
