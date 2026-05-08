@@ -1,71 +1,53 @@
+
+==================== kontakt.html ====================
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kontakt</title>
-    <style>
-    .box {
-      background-color: #111;
-      color: white;
-      padding:30px;
-      border-radius: 10px;
-      width: 70%;
-    }
-    a {
-      color: #4da6ff;
-    }
-    nav {
-    margin-bottom: 20px;
-    }
-    h1, h2 {
-      color: white;
-    }
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="box"> 
 
-<h1>Kontakt</h1>
+  <div class="box">
+    <h1>Kontakt</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ueber-mich.html">Über mich</a>
+      <a href="links.html">Wichtige Links</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="angebot.html">Angebot</a>
+    </nav>
+  </div>
 
-<nav>
-  <a href="index.html">Home</a> |
-  <a href="ueber-mich.html">Über mich</a> |
-  <a href="links.html">Wichtige Links</a> |
-  <a href="kontakt.html">Kontakt</a> |
-  <a href="angebot.html">Angebot</a> 
-</nav>
+  <div class="content">
+    <h2>Kontaktformular</h2>
 
-<hr>
-<h2>Kontaktformular</h2>
-  <form action="https://formspree.io/f/mbdwabwr" method="POST">
-  <input type="hidden" name="_redirect" value="https://htb-dadel.github.io/index.html">
-   <p>
-    <label>Vorname:</label><br>
-    <input type="text" name="vorname" style="width: 300px;">
-  </p>
-    <p>
-       <label>Nachname:</label><br>
-    <input type="text" name="nachname" style="width: 300px;">
-    </p> 
-    <p>
-       <label>Ort / Adresse:</label><br>
-    <input type="text" name="adresse" style="width: 400px;">
-    </p>
-     <p>
-       <label>E-Mail:</label><br>
-    <input type="email" name="email" style="width: 300px;">
-    </p>
-     <p>
-       <label>Telefon:</label><br>
-    <input type="text" name="telefon" style="width: 300px;">
-    </p>
-     <p>
-       <label>Nachricht:</label><br>
-    <textarea name="nachricht" rows="6" style="width: 500px;"></textarea>
-    </p>
-    <button type="submit">Nachricht senden</button>
-  </p>
-</form>
-</div>
+    <form action="https://formspree.io/f/DEIN-FORMSPREE-CODE" method="POST">
+      <label>Vorname:</label><br>
+      <input type="text" name="vorname" required><br>
+
+      <label>Nachname:</label><br>
+      <input type="text" name="nachname" required><br>
+
+      <label>Ort / Adresse:</label><br>
+      <input type="text" name="adresse"><br>
+
+      <label>E-Mail:</label><br>
+      <input type="email" name="email" required><br>
+
+      <label>Telefon:</label><br>
+      <input type="tel" name="telefon"><br>
+
+      <label>Nachricht:</label><br>
+      <textarea name="nachricht" required></textarea><br>
+
+      <button type="submit">Nachricht senden</button>
+    </form>
+
+  </div>
+
 </body>
 </html>
