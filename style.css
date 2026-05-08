@@ -39,6 +39,30 @@ nav a {
   padding: 10px 14px;
   border-radius: 8px;
 }
+/* korrektur farbe */
+body {
+  background: #f4f4f4;
+  color: #222;
+}
+.box h1,
+.box h2,
+-box h3, {
+  color: white;
+}
+.box {
+  background: #111;
+  color: white;
+}
+.box p {
+  color: white;
+}
+nav a {
+  background: #222;
+  color; #4da6ff;
+}
+nav a:hover {
+  background: #333;
+    }
 img {
   max-width: 100%;
   height: auto;
