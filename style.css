@@ -101,7 +101,12 @@ img {
     .content label {
       color: #222;
     }
-      
+     .content img {
+       max-width: 188px;
+       display: block;
+       margin-left: auto;
+       margin-bottom: 20px;
+     }
       
   }
 }
