@@ -138,10 +138,10 @@ button:hover {
     margin-left: 0;
 
     .darkroom-bg {
-  background: url("darkroom.jpg") center center / cover no-repeat;
-  min-height: 400px;
+  background: url("IMG-20171002-WA0063.jpg") center center / cover no-repeat;
+  min-height: 700px;
   border-radius: 14px;
-  padding: 40px;
+  padding: 50px;
   color: white;
   position: relative;
 }
