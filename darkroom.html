@@ -8,6 +8,15 @@
 </head>
 <body>
 
+<script>
+let passwort = prompt("Passwort eingeben:");
+
+if (passwort !== "darkroom2026") {
+  alert("Kein Zugang");
+  window.location.href = "index.html";
+}
+</script>
+
 <div class="box">
 <h1>Darkroom</h1>
 
@@ -23,17 +32,13 @@
 </nav>
 </div>
 
-<div class="content">
+<div class="content darkroom-bg">
 
 <h2>Geschützter Bereich</h2>
 
 <p>
 Nicht alles gehört öffentlich ins Schaufenster.
 Manches braucht Ruhe, Vertrauen und den richtigen Zugang.
-</p>
-
-<p>
-Hier finden sich:
 </p>
 
 <ul>
@@ -48,13 +53,6 @@ Hier finden sich:
 <p>
 Vertrauen beginnt dort,
 wo nicht alles offenliegt.
-</p>
-
-<h3>Passwortbereich</h3>
-
-<p>
-Dieser Bereich ist für ausgewählte Inhalte reserviert.
-Der Zugang erfolgt nur mit persönlichem Passwort.
 </p>
 
 </div>
