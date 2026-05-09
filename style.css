@@ -136,6 +136,28 @@ button:hover {
 
   .content img {
     margin-left: 0;
+
+    .darkroom-bg {
+  background: url("darkroom.jpg") center center / cover no-repeat;
+  min-height: 400px;
+  border-radius: 14px;
+  padding: 40px;
+  color: white;
+  position: relative;
+}
+
+.darkroom-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  border-radius: 14px;
+}
+
+.darkroom-bg * {
+  position: relative;
+  z-index: 2;
+}
   }
 }
 
